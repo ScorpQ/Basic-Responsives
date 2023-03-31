@@ -1,0 +1,156 @@
+/* GLOBAL CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+
+/* OPTIONAL CLASSES*/
+.font-20px{
+    font-size: 20px;
+}
+.font-50px{
+    font-size: 50px;
+}
+.font-yellow{
+    color: #ffc200;
+}
+.font-weight-700{
+    font-weight: 700;
+}
+.ptop-40px{
+    padding-top: 40px;
+}
+.pbottom-20px{
+    padding-bottom: 20px;
+}
+.pbottom-40px{
+    padding-bottom: 40px;
+}
+.text-center{
+    text-align: center;
+}
+
+
+/* HEADER PART */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 25px 50px 50px 50px;
+}
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 20px 0px 90px 0px;
+}
+header a{
+    margin: 0px 5px;
+    text-decoration-line: underline;    
+}
+
+/* BANNER PART */
+.banner{
+    background-color: #333333;
+    text-align: center;
+    color: white;
+}
+
+/* MAIN PART */
+main{
+    background-color: #ffc200;
+    padding: 20px;
+}
+main .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+}
+.cards .col{
+    margin: 0 auto;
+    width: min-content;
+}
+img{
+    margin: 10px;
+}
+
+/* FOOTER PART */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 3% 4%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+/*
+
+img {
+  margin: 10px auto;
+  height: auto;
+  width: auto;
+}
+
+
+/*Sizing
+
+.container {
+    margin: 0 auto;
+  }
+  
+  .spacer {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+ 
+  
+  
+  /*Jumbotron Section
+  
+  .jumbotron {
+    max-width: 1200px;
+  }
+  
+  
+ 
+  
+  /*Expertise Section
+  
+  .col {
+  
+  }
+
+  
+  /*Footer Section
+  .footer {
+    padding: 60px 0px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .footer h3 {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  
+  .footer p {
+    font-size:12px;
+    margin-bottom: 0;
+    margin-left: 20px;
+  }
+  
+
+*/
