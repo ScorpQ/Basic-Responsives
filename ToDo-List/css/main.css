@@ -1,0 +1,83 @@
+/*  RESET CSS  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* OPTIONAL CSS */
+.main-back-color{
+    background-color:white;
+}
+.second-back-color{
+    background-color:aliceblue;
+}
+.text-center{
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* HEADER PART */
+header h1{
+    font-family: 'Rock Salt', 'cursive';
+    background-color: steelblue;
+    color: khaki;
+    padding: 10px;
+}
+header h2{
+    font-family: 'Quicksand', sans-serif;
+    background-color:aliceblue;
+    color: lightslategrey;
+    padding: 30px 5px 30px 5px;
+}
+
+/* CARDS */
+main{
+   display: flex;
+}   
+.day-do-cards{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+}
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    width: 125px;
+    height: 125px;
+    padding: 10px;
+    margin: 1px;
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+.day{
+    background-color: steelbluSe;
+    font-family: 'Rock Salt', 'cursive';
+    font-weight: 700;
+}
+.do{
+    background-color: khaki;
+    font-size: 12px;
+}
+
+/* REMINDER PART */
+.reminder{
+    font-family: 'Rock Salt', 'cursive';
+    background-color: khaki;
+    flex-grow: 5;
+    margin: 2px;
+    min-width: 250px;
+}
+
