@@ -1,0 +1,103 @@
+/* RESET CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* END OF RESET */
+
+
+
+/* CSS VARIABLES */
+:root{
+    --dark: #070917;
+    --white: #E8F7FB;
+    --orange: #DA722C;
+    --blue: #057ADA;
+    --dark-blue: #023047;
+    --purple: #6F7DFB;   
+    
+    --raleway: "Raleway";
+    --poppins: "Poppins";
+}
+/* END OF VARIABLES */
+
+
+/* OPTIONAL CLASESS*/
+.btn{
+    padding: 16px 32px;
+    border-radius: 24px;
+    color: #FFF;
+
+    text-decoration:none;
+    font-family: var(--poppins);
+    position: relative;
+}
+
+.text-white{
+    color:#FFF;
+    text-decoration: none;
+}
+.back-dark-blue{
+    background-color: var(--dark-blue);
+}
+.back-orange{
+    background-color: var(--orange);
+}
+/* END OF OPTIONALS */
+
+
+
+/* LAYER-ONE */
+.layer-one{
+    background-image: linear-gradient(rgba(111, 125, 251, 1),rgba(38, 48, 140, 1));
+    height: 200vh;
+
+}
+header{
+    width: 1144px;
+    margin: 0px auto;
+    padding:0px 10px 0px 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: var(--poppins);
+    
+    position: fixed;
+    top: 36px;
+    
+
+    z-index: 10;
+  
+} 
+
+nav{
+    width: 534px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.btn.enroll-icon::before{
+    content: url(/img/PencilAlt.png);
+    vertical-align: middle;
+    position: absolute;
+    top: 16px;
+    left: 30px;
+}
+.btn.enroll-icon{
+    padding-left: 60px;
+}
+
+.hero{
+    max-width: 1144px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+
+    display: flex;
+
+    bottom: 0px;
+}
