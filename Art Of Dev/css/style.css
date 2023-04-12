@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* END OF RESET */
+/* *********************************************** */
 
 
 
@@ -19,21 +19,27 @@
     
     --raleway: "Raleway";
     --poppins: "Poppins";
+
+    --back-color: rgba(111, 125, 251, 1) rgba(59, 68, 143, 1);
 }
-/* END OF VARIABLES */
+/* *********************************************** */
 
 
 /* OPTIONAL CLASESS*/
 .btn{
+    position: relative;
     padding: 16px 32px;
     border-radius: 24px;
-    color: #FFF;
 
-    text-decoration:none;
     font-family: var(--poppins);
-    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    color: #FFF;
+    text-decoration:none;
+    width: max-content;
 }
-
 .text-white{
     color:#FFF;
     text-decoration: none;
@@ -44,60 +50,189 @@
 .back-orange{
     background-color: var(--orange);
 }
-/* END OF OPTIONALS */
+.back-white{
+    background-color: var(--white);
+}
+.nav-text-style{  /* All of style coppied from figma */
+    font-family: var(--poppins);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+/* *********************************************** */
 
 
 
-/* LAYER-ONE */
+/*      LAYER-ONE      */
 .layer-one{
     background-image: linear-gradient(rgba(111, 125, 251, 1),rgba(38, 48, 140, 1));
-    height: 200vh;
-
+    height: 100vh;
 }
-header{
-    width: 1144px;
-    margin: 0px auto;
-    padding:0px 10px 0px 10px;
+/* *********************************************** */
 
+
+/*      LAYER-ONE HEADER      */
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    font-family: var(--poppins);
+    max-width: 1144px;
+    margin: 0px auto;
+    padding:0px 10px 0px 10px;
     
     position: fixed;
     top: 36px;
-    
-
-    z-index: 10;
-  
+    left:0 ;
+    right: 0;
+    z-index: 100;
 } 
-
+header .logo{
+    font-family: var(--raleway);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 47px;
+}
 nav{
-    width: 534px;
     display: flex;
     align-items: center;
-    gap: 60px;
+    justify-content: space-between;
+    width: 534px;
+    
 }
+nav a{
+    font-family: var(--poppins);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+/* *********************************************** */
 
-.btn.enroll-icon::before{
+
+
+/*      LAYER-ONE HERO      */
+.hero{
+    max-width: 1144px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width:100%;
+    align-items: end;
+    position: relative;
+}
+.hero .hero-left{
+    padding-top: 60px;
+    align-self: center;
+    width: 457px;
+}
+.hero .hero-left h2{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 125%;
+    margin-bottom: 0;
+}
+.hero .hero-left p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.hero-left .btn.enroll-icon::before{
     content: url(/img/PencilAlt.png);
     vertical-align: middle;
     position: absolute;
     top: 16px;
     left: 30px;
 }
-.btn.enroll-icon{
+.hero-left .btn.enroll-icon{
     padding-left: 60px;
 }
+.hero .hero-right img{
+    width: 400px;
+    height: 500px;
+    vertical-align: bottom;    
+}
 
-.hero{
+.hero .card{
+    border-radius: 24px;
+    color: var(--dark-blue);
+    box-shadow: 10px 10px ;
+}
+.hero .card h3{
+    font-family: var(--poppins);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 125%;
+    text-align: center;
+}
+.hero .card p{
+    font-family: var(--poppins);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+}
+.hero .enrolled{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.4rem 2rem 1rem 2rem;
+
+    top : 48%;
+    left: 45%;
+    position: absolute;
+}
+.hero .rating{
+    top : 74%;
+    left: 42%;
+    position: absolute;
+
+    padding: 0.5rem 2rem 1rem 2rem;
+}
+.hero .rating div{
+    display: flex;
+}
+/*      LAYER-ONE END      */
+
+
+/*      LAYER-TWO      */
+
+/* *********************************************** */
+
+.layer-two{
     max-width: 1144px;
+    height: 100vh;
+    margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
-    margin: auto;
-
-    display: flex;
-
-    bottom: 0px;
 }
+.testimoinal{
+
+    height: 546px;
+}
+.testimoinal-left .stick{
+    background-color: var(--dark-blue);
+    border-radius: 24px;
+    height: 100%;
+    width: 28px;
+}
+.testimoinal-left .card{
+    z-index: 10;
+}
+
+
+
+

@@ -7,44 +7,77 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Raleway:wght@900&display=swap" rel="stylesheet">
-    <title>Art Of Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@900&display=swap" rel="stylesheet">    <title>Art Of Dev</title>
 </head>
 <body>
-    <div class="layer-one">
+    <div class="layer-one"> <!-- Layer-One refers to the first 100vh viewport -->
         <header>
                 <div class="logo">
                     <h1 class="text-white">GD.</h1>
                 </div>
                 <nav>
-                    <a href="#" class="text-white">About</a>   
-                    <a href="#" class="text-white">Services</a>
-                    <a href="#" class="text-white">Our Work</a>
-                    <a href="#" class="btn back-dark-blue">Enroll Now</a>
+                    <a href="#" class="text-white nav-text-style">About</a>   
+                    <a href="#" class="text-white nav-text-style">Services</a>
+                    <a href="#" class="text-white nav-text-style">Our Work</a>
+                    <a href="#" class="btn back-dark-blue nav-text-style">Enroll Now</a>
                 </nav>
         </header>
         <section class="hero">
-            <article class="left-side">
-                <h2>Learn the art of Game Dev</h2>
-                <p>This is a comprehensive course on Game Development. 
+            <article class="hero-left">
+                <h2 class="text-white">Learn the art of Game Dev</h2>
+                <p class="text-white">This is a comprehensive course on Game Development. 
                     You will learn everything from generating an idea to 
                     publishing your games to different platforms.
-                </p>
+                </p>  
                 <a href="#" class="btn back-orange enroll-icon">Enroll Now</a>
             </article>
-            <div class="right-side">
+            <div class="hero-right">
                 <img src="img/hero-image 1.png">
             </div>
-            <div class="card-enrolled">
-                <h3>32K</h3>
-                <p>Students Enrolled</p>
-            </div>
-            <div class="card-rating">
-                <h3>4.7 <img src="img/emojione_star.png"></h3>
-                <p>Overall Rating</p>
-            </div>
+                <div class="card enrolled back-white"> 
+                    <h3>32K</h3>
+                    <p>Students Enrolled</p>
+                </div>
+                <div class="card rating back-white">
+                    <div>
+                        <h3>4.7</h3>
+                        <img src="/img/emojione_star.png">
+                    </div> 
+                    <p>Overall Rating</p>
+                </div>
         </section>
     </div>
-   
+    <div class="layer-two"> <!-- Layer-One refers to the second 100vh viewport -->
+        <div class="testimoinal"> 
+            <div class="testimoinal-left">
+                <div class="stick"></div>
+                <div class="card up">
+                    <div class="up-section">
+                        <p>This is a great course. It helped me a lot. Thank you :)</p>
+                    </div>
+                    <div class="down-section">
+                        <h4>Jane Cooper</p>
+                        <p>Developer, Sony</p>
+                    </div>
+                    <img src="./img/Ellipse 1 (1).png">
+                </div>
+                <div class="card down">
+                    <div class="up-section">
+                        <p>Amazing Work! Well done!</p>
+                    </div>
+                    <div class="down-section">
+                        <h4>Jacob Jones</p>
+                        <p>Designer, Facebook</p>
+                    </div>
+                    <img src="./img/Ellipse 1.png">
+                </div>
+            </div>
+            <div class="testimoinal-right">
+    
+            </div>
+        </div>
+    </div>
 </body>
 </html>
