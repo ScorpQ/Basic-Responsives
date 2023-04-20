@@ -40,12 +40,53 @@ nav .fa-brands{
 
 .hero{
     background-image: URL("/images/back.jpg");
-    height: 700vh;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+
+    position: relative;
+    top: 3.1rem;
 }
 
+.hero .card{
+    background-color: #9DC20B;
+    border: 1px solid #6b6b6b;
+    border-radius: 5px;
+    color: #FFF;
+    text-align: center;
+   
+    padding: 1.5rem 4.1rem 2.5rem 4.1rem;
 
 
-.hero{
-    background-image: URL("/images/back.jpg");
-    height: 300vh;
+    width: fit-content;
+    position: relative;
+    top: 11.5rem;
+    left: 10%;
+}
+.card h3{
+    font-family: 'Damion';
+    font-size: 35px;
+    font-weight: 100;
+}
+.card .parag1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 47px;
+    line-height: 4rem;
+}
+.card .parag2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding-top: 0.75rem;
+}
+.card a{
+    display: block;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    background-color: #4A4A4A;
+    color:#FFF;
+    font-family: 'Roboto';
+    line-height: 2rem;
+    border-radius: 5px;
 }
