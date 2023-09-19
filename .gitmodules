@@ -1,0 +1,3 @@
+[submodule "jotTest"]
+	path = jotTest
+	url = https://github.com/ScorpQ/jotTest.git
