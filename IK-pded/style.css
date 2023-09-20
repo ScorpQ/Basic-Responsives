@@ -6,7 +6,7 @@ header {
 }
 header .hamburger {
   display: block;
-  width: 3rem;
+  min-width: 3rem;
   margin: 16px 10px 10px 10px;
 }
 header .hamburger div {
@@ -41,9 +41,14 @@ header nav a {
 .banner {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .banner .banner-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
   margin: auto;
   padding: 0 5rem;
 }
@@ -64,14 +69,18 @@ header nav a {
   text-align: end;
 }
 .banner .banner-container img {
-  width: 100%;
+  min-width: 100%;
+}
+
+.standartButton1 {
+  width: 10rem;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #999292;
+  background-color: #000000;
   font-family: "Sarabun", sans-serif;
 }
 
