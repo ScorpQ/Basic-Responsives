@@ -1,4 +1,10 @@
+@import '../abstracts/colors';
+
 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
     .hamburger{
         display: block;
         width: 3rem;
@@ -7,7 +13,7 @@ header{
             height: 0.4rem;
             margin-bottom: 10px;
             width: 100%;
-            background-color: rgb(190, 11, 11);
+            background-color: $grey1;
             transition: all 0.3s ease;
             transform-origin: left center;
         }
@@ -26,8 +32,12 @@ header{
         }
     }
     nav{
+        width: 15rem;
+        display: flex;
+        justify-content: space-between;
         a{
             color: aliceblue;
+            font-size: 1.5rem;
         }
     }
 }

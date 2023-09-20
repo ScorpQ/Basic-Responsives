@@ -1,0 +1,32 @@
+@import '../abstracts/colors';
+
+.banner{  
+    display: flex;
+    flex-direction: column;
+    
+    .banner-container{
+        display: flex;
+        margin: auto;
+        padding: 0 5rem;
+
+        &-right{
+            font-size: 28px;
+            color: $white1;
+            line-height: 145.518%;
+            letter-spacing: 1.68px;     
+            width: 40rem;
+            span{
+                color: $green1;
+            }
+            p{
+                padding-top: 1rem;
+            }
+            p:last-child {
+                text-align: end;
+            }
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

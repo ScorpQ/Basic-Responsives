@@ -1,3 +1,9 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+}
 header .hamburger {
   display: block;
   width: 3rem;
@@ -7,7 +13,7 @@ header .hamburger div {
   height: 0.4rem;
   margin-bottom: 10px;
   width: 100%;
-  background-color: rgb(190, 11, 11);
+  background-color: #525252;
   transition: all 0.3s ease;
   transform-origin: left center;
 }
@@ -22,15 +28,50 @@ header .hamburger:hover .bar3 {
   transform: rotate(-32deg);
   width: 120%;
 }
+header nav {
+  width: 15rem;
+  display: flex;
+  justify-content: space-between;
+}
 header nav a {
   color: aliceblue;
+  font-size: 1.5rem;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+}
+.banner .banner-container {
+  display: flex;
+  margin: auto;
+  padding: 0 5rem;
+}
+.banner .banner-container-right {
+  font-size: 28px;
+  color: #FFF;
+  line-height: 145.518%;
+  letter-spacing: 1.68px;
+  width: 40rem;
+}
+.banner .banner-container-right span {
+  color: #316C40;
+}
+.banner .banner-container-right p {
+  padding-top: 1rem;
+}
+.banner .banner-container-right p:last-child {
+  text-align: end;
+}
+.banner .banner-container img {
+  width: 100%;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #000000;
+  background-color: #999292;
   font-family: "Sarabun", sans-serif;
 }
 
