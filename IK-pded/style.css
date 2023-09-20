@@ -1,0 +1,42 @@
+header .hamburger {
+  display: block;
+  width: 3rem;
+  margin: 16px 10px 10px 10px;
+}
+header .hamburger div {
+  height: 0.4rem;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: rgb(190, 11, 11);
+  transition: all 0.3s ease;
+  transform-origin: left center;
+}
+header .hamburger:hover .bar1 {
+  transform: rotate(32deg);
+  width: 120%;
+}
+header .hamburger:hover .bar2 {
+  width: 0%;
+}
+header .hamburger:hover .bar3 {
+  transform: rotate(-32deg);
+  width: 120%;
+}
+header nav a {
+  color: aliceblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000000;
+  font-family: "Sarabun", sans-serif;
+}
+
+body {
+  width: 90%;
+  margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

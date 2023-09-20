@@ -1,0 +1,33 @@
+header{
+    .hamburger{
+        display: block;
+        width: 3rem;
+        margin: 16px 10px 10px 10px;
+        div{
+            height: 0.4rem;
+            margin-bottom: 10px;
+            width: 100%;
+            background-color: rgb(190, 11, 11);
+            transition: all 0.3s ease;
+            transform-origin: left center;
+        }
+        &:hover {
+            .bar1{
+                transform: rotate(32deg);
+                width: 120%;
+            }   
+            .bar2{
+                width: 0%;
+            }
+            .bar3{
+                transform: rotate(-32deg);
+                width: 120%;
+            }  
+        }
+    }
+    nav{
+        a{
+            color: aliceblue;
+        }
+    }
+}
