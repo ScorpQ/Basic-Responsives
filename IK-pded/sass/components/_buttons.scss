@@ -1,5 +1,12 @@
-@import '../abstracts/colors';
+@use '../abstracts' as *;
 
 .standartButton1{
-    width: 10rem;
+    width: min-content;
+    border: 2px solid $grey1;
+    color: $white1;
+    text-align: center;
+    border-radius: 15px;
+    padding: 1rem 3rem;
+    white-space: nowrap;
+    font-size: 1.5rem
 }

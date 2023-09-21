@@ -1,4 +1,4 @@
-@import '../abstracts/colors';
+@use '../abstracts' as *;
 
 header{
     display: flex;
