@@ -1,13 +1,13 @@
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 6rem;
+  align-items: start;
+  padding: 2rem 0;
 }
 header .hamburger {
   display: block;
-  min-width: 3rem;
-  margin: 16px 10px 10px 10px;
+  min-width: 3.5rem;
+  margin: 5px 10px 10px 10px;
 }
 header .hamburger div {
   height: 0.4rem;
@@ -16,6 +16,7 @@ header .hamburger div {
   background-color: #525252;
   transition: all 0.3s ease;
   transform-origin: left center;
+  border-radius: 5rem;
 }
 header .hamburger:hover .bar1 {
   transform: rotate(32deg);
@@ -43,6 +44,7 @@ header nav a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 5rem 0;
 }
 .banner .banner-container {
   display: flex;
@@ -51,7 +53,7 @@ header nav a {
   width: 100%;
   flex-wrap: wrap;
   margin: auto;
-  padding: 0 5rem;
+  padding: 0 8rem;
 }
 .banner .banner-container-right {
   font-size: 28px;
@@ -73,9 +75,36 @@ header nav a {
   min-width: 100%;
 }
 
+.blog {
+  padding: 0 5rem;
+}
 .blog-header h2 {
   color: #FFF;
   text-align: center;
+  font-size: 48px;
+  letter-spacing: 2.88px;
+}
+.blog-header span {
+  color: #316C40;
+}
+.blog-header p {
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1.08px;
+}
+.blog-container .blog-box {
+  background-color: #201E1E;
+  padding: 1rem 3rem;
+  border-radius: 15px;
+}
+.blog-container .blog-box h3 {
+  color: #FFF;
+  font-size: 32px;
+}
+.blog-container .blog-box p {
+  color: #FFF;
+  font-size: 15px;
 }
 
 .standartButton1 {
@@ -93,13 +122,13 @@ header nav a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #000000;
   font-family: "Sarabun", sans-serif;
 }
 
 body {
-  width: 70%;
+  width: 75%;
   margin: auto;
+  background-color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

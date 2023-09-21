@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 5rem 0;
     .banner-container{
         display: flex;
         justify-content: space-between;
@@ -12,11 +13,10 @@
         width: 100%;    
         flex-wrap: wrap;
         margin: auto;
-        padding: 0 5rem;
-
+        padding: 0 8rem;
         &-right{
             font-size: 28px;
-            color: $white1;
+            color: $white1; 
             line-height: 145.518%;
             letter-spacing: 1.68px;     
             width: 40rem;
@@ -37,10 +37,38 @@
 }
 
 .blog{
+    padding: 0 5rem;
     &-header{
         h2{
             color: $white1;
             text-align: center;
+            font-size: 48px;
+            letter-spacing: 2.88px;
+        }
+        span{
+            color: $green1;
+        }
+        p{
+            color: $white1;
+            text-align: center;
+            font-size: 18px;
+            letter-spacing: 1.08px;
+        }
+    }
+    &-container{
+        .blog-box{
+            background-color: $grey2;
+            padding:1rem 3rem;
+            border-radius: 15px;
+            h3{
+                color: $white1;
+                font-size: 32px;
+            }
+            p{
+                color: $white1;
+                font-size: 15px;
+            }
+
         }
     }
 }

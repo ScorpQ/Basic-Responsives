@@ -3,12 +3,12 @@
 header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 6rem;
+    align-items: start;
+    padding: 2rem 0;
     .hamburger{
         display: block;
-        min-width: 3rem;
-        margin: 16px 10px 10px 10px;
+        min-width: 3.5rem;
+        margin: 5px 10px 10px 10px;
         div{
             height: 0.4rem;
             margin-bottom: 10px;
@@ -16,6 +16,7 @@ header{
             background-color: $grey1;
             transition: all 0.3s ease;
             transform-origin: left center;
+            border-radius: 5rem;
         }
         &:hover {
             .bar1{
