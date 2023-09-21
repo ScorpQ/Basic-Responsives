@@ -43,7 +43,6 @@ header nav a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 25rem;
 }
 .banner .banner-container {
   display: flex;
@@ -72,6 +71,11 @@ header nav a {
 }
 .banner .banner-container img {
   min-width: 100%;
+}
+
+.blog-header h2 {
+  color: #FFF;
+  text-align: center;
 }
 
 .standartButton1 {
