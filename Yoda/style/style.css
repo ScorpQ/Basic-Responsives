@@ -17,7 +17,7 @@ body{
     background-position: 70%;                       /* main div'deki background-image configure edildi. */
     background-size: 320%;                          /* main div'deki background-image configure edildi. */
     rotate: x 0deg;                                  /* Rotate öncesi default rotate ayarı setlendi. */
-    width: 19rem;                                   /* Genişlik setlendi. */
+    width: 16rem;                                   /* Genişlik setlendi. */
     position: relative;                             /* içerdeki image'leri konumlandırmak için */
     transition: all 0.5s ease;                      /* Rotate geçişi için transit. setlendi. */
     aspect-ratio: 9 / 16;                           /* height: 35.5rem; vermektense aspect ratio verildi. */
@@ -27,10 +27,14 @@ body{
     opacity: 0;                                     /* hover ile 1'e çekilecek */
 }
 .yoda:hover{
-    rotate: x 40deg;                                /* hover ile rotate ediliyor. */
+    rotate: x 30deg;                                /* hover ile rotate ediliyor. */
     opacity: 1;                                     /* hover ile opaticy 1 setlendi. */
+    box-shadow: -4px 49px 71px 16px rgba(0,0,0,0.75);
 }
 img{
     max-width: 100%;                                
     height: 100%;
+}
+.text{
+    
 }
