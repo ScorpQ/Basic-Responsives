@@ -4,20 +4,20 @@
     box-sizing: border-box;
 }
 html{
-    color-scheme: dark;
+    background-color: #191C29;
 }
 body{
     height: 100vh;
     display: grid;
     place-items: center;
+    perspective: 900px;
 }
 .yoda{
-    outline: 3px solid limegreen;                 /* outline verildi */
     background-image: url('../assets/back1.jpg');   /* main div'e background-image verildi. */
     background-position: 70%;                       /* main div'deki background-image configure edildi. */
     background-size: 320%;                          /* main div'deki background-image configure edildi. */
-    rotate: x 0deg;                                 /* Rotate öncesi default rotate ayarı setlendi. */
-    width: 20rem;                                   /* Genişlik setlendi. */
+    rotate: x 0deg;                                  /* Rotate öncesi default rotate ayarı setlendi. */
+    width: 19rem;                                   /* Genişlik setlendi. */
     position: relative;                             /* içerdeki image'leri konumlandırmak için */
     transition: all 0.5s ease;                      /* Rotate geçişi için transit. setlendi. */
     aspect-ratio: 9 / 16;                           /* height: 35.5rem; vermektense aspect ratio verildi. */
@@ -27,7 +27,7 @@ body{
     opacity: 0;                                     /* hover ile 1'e çekilecek */
 }
 .yoda:hover{
-    rotate: x 45deg;                                /* hover ile rotate ediliyor. */
+    rotate: x 40deg;                                /* hover ile rotate ediliyor. */
     opacity: 1;                                     /* hover ile opaticy 1 setlendi. */
 }
 img{
