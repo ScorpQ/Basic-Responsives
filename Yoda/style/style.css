@@ -12,11 +12,25 @@ body{
     place-items: center;
 }
 .yoda{
-    outline: 3px solid limegreen;
-    position: relative;
-    width: 20rem;
-    background-image: url('../assets/back1.jpg');
+    outline: 3px solid limegreen;                 /* outline verildi */
+    background-image: url('../assets/back1.jpg');   /* main div'e background-image verildi. */
+    background-position: 70%;                       /* main div'deki background-image configure edildi. */
+    background-size: 320%;                          /* main div'deki background-image configure edildi. */
+    rotate: x 0deg;                                 /* Rotate öncesi default rotate ayarı setlendi. */
+    width: 20rem;                                   /* Genişlik setlendi. */
+    position: relative;                             /* içerdeki image'leri konumlandırmak için */
+    transition: all 0.5s ease;                      /* Rotate geçişi için transit. setlendi. */
+    aspect-ratio: 9 / 16;                           /* height: 35.5rem; vermektense aspect ratio verildi. */
+}
+.yoda > *{
+    position: absolute;                             /* içerdeki image'leri konumlandırmak için */
+    opacity: 0;                                     /* hover ile 1'e çekilecek */
+}
+.yoda:hover{
+    rotate: x 45deg;                                /* hover ile rotate ediliyor. */
+    opacity: 1;                                     /* hover ile opaticy 1 setlendi. */
 }
 img{
-    max-width: 100%;
+    max-width: 100%;                                
+    height: 100%;
 }
