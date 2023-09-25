@@ -55,16 +55,16 @@ header nav a {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 5rem auto;
-  padding: 0 8rem;
+  padding: 0 5%;
 }
 .banner .banner-container-right {
   font-size: 28px;
   color: #FFF;
   line-height: 145.518%;
   letter-spacing: 1.68px;
-  width: 65%;
+  width: 60%;
 }
 .banner .banner-container-right span {
   color: #316C40;
@@ -75,42 +75,54 @@ header nav a {
 .banner .banner-container-right p:last-child {
   text-align: end;
 }
-.banner .banner-container img {
-  min-width: 100%;
+.banner .banner-container-left {
+  min-width: min-content;
+  padding: 0 4rem;
+}
+.banner .banner-container-left img {
+  width: 85%;
+  min-width: 226px;
 }
 
-.blog {
-  padding: 0 5rem;
-}
-.blog-header h2 {
-  color: #FFF;
-  text-align: center;
-  font-size: 48px;
-  letter-spacing: 2.88px;
-}
-.blog-header span {
-  color: #316C40;
-}
-.blog-header p {
-  color: #FFF;
-  text-align: center;
-  font-size: 18px;
-  letter-spacing: 1.08px;
-}
-.blog-container .blog-box {
-  background-color: #201E1E;
-  padding: 1rem 3rem;
-  border-radius: 15px;
-}
-.blog-container .blog-box h3 {
-  color: #FFF;
-  font-size: 32px;
-}
-.blog-container .blog-box p {
-  color: #FFF;
-  font-size: 15px;
-}
+/* 
 
+.blog{
+    padding: 0 5rem;
+    &-header{
+        h2{
+            color: $white1;
+            text-align: center;
+            font-size: 48px;
+            letter-spacing: 2.88px;
+        }
+        span{
+            color: $green1;
+        }
+        p{
+            color: $white1;
+            text-align: center;
+            font-size: 18px;
+            letter-spacing: 1.08px;
+        }
+    }
+    &-container{
+        .blog-box{
+            background-color: $grey2;
+            padding:1rem 3rem;
+            border-radius: 15px;
+            h3{
+                color: $white1;
+                font-size: 32px;
+            }
+            p{
+                color: $white1;
+                font-size: 15px;
+            }
+
+        }
+    }
+}
+*/
 .standartButton1 {
   width: min-content;
   border: 2px solid #525252;
@@ -122,7 +134,7 @@ header nav a {
   font-size: 1.5rem;
 }
 
-.he {
+h1 {
   color: #FFF;
 }
 
@@ -135,6 +147,7 @@ header nav a {
 
 body {
   width: 80%;
+  max-width: 1400px;
   margin: auto;
   background: #121212;
 }
