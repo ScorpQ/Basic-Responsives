@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem 0;
+    padding: 1rem 5%;
     .banner-container{
         display: flex;
         justify-content: space-between;
@@ -13,7 +13,6 @@
         width: 100%;    
         flex-wrap: nowrap;
         margin: 5rem auto;
-        padding: 0 5%;
         &-right{
             font-size: 28px;
             color: $white1; 
@@ -43,10 +42,26 @@
 
 
 .services{
-    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &-box{
+        text-align: center;
+        flex: 1 10 35%;
+        height: 300px;
+        margin: 1.5rem;
+        border-radius: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.50);
+        background: linear-gradient(180deg, rgba(48, 126, 67, 0.07) 0%, rgba(42, 92, 54, 0.80) 68.75%);
+    }
 }
 
 
+@media only screen and (max-width: 1024px) {
+    .services-box{
+        flex: 0 0 65%;
+    }
+}
 
 
 /* 

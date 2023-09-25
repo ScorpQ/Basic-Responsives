@@ -48,7 +48,7 @@ header nav a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem 0;
+  padding: 1rem 5%;
 }
 .banner .banner-container {
   display: flex;
@@ -57,7 +57,6 @@ header nav a {
   width: 100%;
   flex-wrap: nowrap;
   margin: 5rem auto;
-  padding: 0 5%;
 }
 .banner .banner-container-right {
   font-size: 28px;
@@ -84,6 +83,26 @@ header nav a {
   min-width: 226px;
 }
 
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.services-box {
+  text-align: center;
+  flex: 1 10 35%;
+  height: 300px;
+  margin: 1.5rem;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: linear-gradient(180deg, rgba(48, 126, 67, 0.07) 0%, rgba(42, 92, 54, 0.8) 68.75%);
+}
+
+@media only screen and (max-width: 1024px) {
+  .services-box {
+    flex: 0 0 65%;
+  }
+}
 /* 
 
 .blog{
