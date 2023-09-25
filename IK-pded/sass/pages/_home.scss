@@ -5,60 +5,58 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem 5%;
+    padding: 5rem 5%;
     .banner-container{
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;    
-        flex-wrap: nowrap;
-        margin: 5rem auto;
         &-right{
-            font-size: 28px;
-            color: $white1; 
-            line-height: 145.518%;
-            letter-spacing: 1.68px;     
-            width: 60%;
-            span{
-                color: $green1;
-            }
+            text-align: center;
             p{
-                padding-top: 1rem;
-            }
-            p:last-child {
-                text-align: end;
+                font-size: 50px;
+                line-height: 145.518%;
+                letter-spacing: 3.6px;
+                color: $white1;
+                padding: 4rem 0;
             }
         }
         &-left{
-            min-width: min-content;
-            padding: 0 4rem;
+            padding: 0 3rem;
             img{
-            width: 85%;
-            min-width: 226px;
+                width: 100%;
+                min-width: 226px;
             }
         }
     }
 }
 
-
 .services{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    &-box{
-        text-align: center;
-        flex: 1 10 35%;
-        height: 300px;
-        margin: 1.5rem;
-        border-radius: 15px;
-        border: 1px solid rgba(0, 0, 0, 0.50);
-        background: linear-gradient(180deg, rgba(48, 126, 67, 0.07) 0%, rgba(42, 92, 54, 0.80) 68.75%);
+    padding: 5rem 0;
+    &-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1rem 0;
+        &-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 0 0 40%;
+            height: 300px;
+            margin: 1.5rem;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.50);
+            background: linear-gradient(180deg, rgba(48, 126, 67, 0.07) 0%, rgba(42, 92, 54, 0.80) 68.75%);
+        }
     }
 }
 
 
+
 @media only screen and (max-width: 1024px) {
-    .services-box{
+    .services-container-box{
         flex: 0 0 65%;
     }
 }
