@@ -2,6 +2,7 @@
 @use 'abstracts';
 @use 'pages';
 @use 'components';
+@use 'base';
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@
     font-family: 'Sarabun', sans-serif;
 }
 body{
-    width: 75%;
+    width: 80%;
     margin: auto;
-    background-color: #000000;;
+    background: #121212;
 }

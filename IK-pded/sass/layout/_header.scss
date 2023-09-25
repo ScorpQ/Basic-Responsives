@@ -5,7 +5,19 @@ header{
     justify-content: space-between;
     align-items: start;
     padding: 2rem 0;
-    .hamburger{
+    nav{
+        width: 15rem;
+        display: flex;
+        justify-content: space-between;
+        a{
+            color: aliceblue;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+/*
+.hamburger{
         display: block;
         min-width: 3.5rem;
         margin: 5px 10px 10px 10px;
@@ -32,13 +44,4 @@ header{
             }  
         }
     }
-    nav{
-        width: 15rem;
-        display: flex;
-        justify-content: space-between;
-        a{
-            color: aliceblue;
-            font-size: 1.5rem;
-        }
-    }
-}
+    */

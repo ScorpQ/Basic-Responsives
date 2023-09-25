@@ -5,21 +5,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5rem 0;
+    padding: 1rem 0;
     .banner-container{
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;    
         flex-wrap: wrap;
-        margin: auto;
+        margin: 5rem auto;
         padding: 0 8rem;
         &-right{
             font-size: 28px;
             color: $white1; 
             line-height: 145.518%;
             letter-spacing: 1.68px;     
-            width: 40rem;
+            width: 65%;
             span{
                 color: $green1;
             }
