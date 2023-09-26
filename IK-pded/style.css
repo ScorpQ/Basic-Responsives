@@ -10,7 +10,7 @@ header nav {
   justify-content: space-between;
 }
 header nav a {
-  color: aliceblue;
+  color: #FFF;
   font-size: 1.3rem;
 }
 
@@ -44,30 +44,26 @@ header nav a {
     }
     */
 .banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 5rem 5%;
 }
 .banner .banner-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 .banner .banner-container-right {
   text-align: center;
 }
 .banner .banner-container-right p {
-  font-size: 40px;
+  font-size: 35px;
   line-height: 145.518%;
   letter-spacing: 3.6px;
-  color: #FFF;
   padding: 4rem 0;
+  color: #FFF;
 }
 .banner .banner-container-left {
   padding: 0 3rem;
+  max-width: 350px;
 }
 .banner .banner-container-left img {
   width: 100%;
@@ -197,6 +193,13 @@ header nav a {
 h1 {
   color: #FFF;
   font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
 }
 
 .services h2 {

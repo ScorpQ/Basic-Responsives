@@ -5,6 +5,13 @@ h1{
     font-size: 2rem;
 }
 
+a{
+    text-decoration: none;
+    &:visited{
+        color: inherit;
+    }
+}
+
 .services h2{
     text-align: center;
     font-size: 35px;

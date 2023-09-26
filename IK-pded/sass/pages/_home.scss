@@ -1,28 +1,24 @@
 @import '../abstracts/colors';
 
 .banner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 5rem 5%;
     .banner-container{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;    
         &-right{
             text-align: center;
             p{
-                font-size: 40px;
+                font-size: 35px;
                 line-height: 145.518%;
                 letter-spacing: 3.6px;
-                color: $white1;
                 padding: 4rem 0;
+                color: $white1;
             }
         }
         &-left{
             padding: 0 3rem;
+            max-width: 350px;
             img{
                 width: 100%;
                 min-width: 226px;
