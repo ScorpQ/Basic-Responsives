@@ -14,7 +14,7 @@
         &-right{
             text-align: center;
             p{
-                font-size: 50px;
+                font-size: 40px;
                 line-height: 145.518%;
                 letter-spacing: 3.6px;
                 color: $white1;
@@ -117,6 +117,23 @@
         color: $white1;
     }
     height: 100px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    color: $white1;
+    h4{
+        color: $white1;
+        font-size: 25px;
+        line-height: 4rem;
+    }
+    ul{
+        list-style-type: none;
+        line-height: 2.2rem;
+        font-size: 18px
+    }
+    
 }
 
 

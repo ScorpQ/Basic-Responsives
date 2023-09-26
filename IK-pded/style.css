@@ -5,13 +5,13 @@ header {
   padding: 2rem 0;
 }
 header nav {
-  width: 15rem;
+  width: 13rem;
   display: flex;
   justify-content: space-between;
 }
 header nav a {
   color: aliceblue;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 /*
@@ -60,7 +60,7 @@ header nav a {
   text-align: center;
 }
 .banner .banner-container-right p {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 145.518%;
   letter-spacing: 3.6px;
   color: #FFF;
@@ -159,6 +159,22 @@ header nav a {
   color: #FFF;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-around;
+  color: #FFF;
+}
+.footer h4 {
+  color: #FFF;
+  font-size: 25px;
+  line-height: 4rem;
+}
+.footer ul {
+  list-style-type: none;
+  line-height: 2.2rem;
+  font-size: 18px;
+}
+
 @media only screen and (max-width: 1024px) {
   .services-container-box {
     flex: 0 0 65%;
@@ -180,6 +196,7 @@ header nav a {
 
 h1 {
   color: #FFF;
+  font-size: 2rem;
 }
 
 .services h2 {
