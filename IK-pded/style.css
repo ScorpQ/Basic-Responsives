@@ -94,6 +94,69 @@ header nav a {
   border-radius: 15px;
   border: 1px solid rgba(0, 0, 0, 0.5);
   background: linear-gradient(180deg, rgba(48, 126, 67, 0.07) 0%, rgba(42, 92, 54, 0.8) 68.75%);
+  cursor: pointer;
+}
+
+.blog {
+  padding: 1rem 5rem;
+}
+.blog-header {
+  padding-bottom: 2rem;
+}
+.blog-header h2 {
+  color: #FFF;
+  text-align: center;
+  font-size: 48px;
+  letter-spacing: 2.88px;
+}
+.blog-header span {
+  color: #316C40;
+}
+.blog-header p {
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1.08px;
+}
+.blog-container .blog-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: #201E1E;
+  padding: 1rem 3rem;
+  border-radius: 15px;
+}
+.blog-container .blog-box-text {
+  padding-right: 1rem;
+}
+.blog-container .blog-box-text h3 {
+  color: #FFF;
+  font-size: 40px;
+  padding-bottom: 1rem;
+}
+.blog-container .blog-box-text p {
+  color: #FFF;
+  font-size: 22px;
+}
+.blog-container .blog-box .blog-box-img {
+  align-self: baseline;
+}
+.blog-container .blog-box .blog-box-img img {
+  float: right;
+  width: 50%;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.partners {
+  padding: 5rem 0;
+  height: 100px;
+}
+.partners h2 {
+  text-align: center;
+  font-size: 35px;
+  line-height: 144.518%; /* 138.737px */
+  letter-spacing: 5.76px;
+  color: #FFF;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -103,42 +166,6 @@ header nav a {
 }
 /* 
 
-.blog{
-    padding: 0 5rem;
-    &-header{
-        h2{
-            color: $white1;
-            text-align: center;
-            font-size: 48px;
-            letter-spacing: 2.88px;
-        }
-        span{
-            color: $green1;
-        }
-        p{
-            color: $white1;
-            text-align: center;
-            font-size: 18px;
-            letter-spacing: 1.08px;
-        }
-    }
-    &-container{
-        .blog-box{
-            background-color: $grey2;
-            padding:1rem 3rem;
-            border-radius: 15px;
-            h3{
-                color: $white1;
-                font-size: 32px;
-            }
-            p{
-                color: $white1;
-                font-size: 15px;
-            }
-
-        }
-    }
-}
 */
 .standartButton1 {
   width: min-content;
