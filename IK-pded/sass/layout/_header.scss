@@ -13,12 +13,20 @@ header{
             color: $white1;
             font-size: 1.3rem;
         }
+        a:after{
+            content:'';
+            display: block;
+            width: 0%;
+            height: 1px;
+            background-color: $white1;
+            transition: width 0.3s ease;
+        }
+        a:hover:after{
+            width: 100%;
+        }
     }
-}
-
-/*
-.hamburger{
-        display: block;
+    .hamburger{
+        display: none;
         min-width: 3.5rem;
         margin: 5px 10px 10px 10px;
         div{
@@ -39,9 +47,22 @@ header{
                 width: 0%;
             }
             .bar3{
-                transform: rotate(-32deg);
+                transform: rotate(-30deg);
                 width: 120%;
             }  
         }
     }
-    */
+}
+
+
+@media only screen and (max-width: 900px){
+    nav{
+        display: none !important;
+    }
+    .hamburger{
+        display: block !important;
+    }
+}
+
+
+
