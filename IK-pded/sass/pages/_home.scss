@@ -1,4 +1,4 @@
-@import '../abstracts/colors';
+@use '../abstracts/colors' as *;
 
 .banner{
     padding: 5rem 5%;

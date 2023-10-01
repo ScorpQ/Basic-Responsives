@@ -236,7 +236,29 @@ header .hamburger:hover .bar3 {
   border-radius: 15px;
   border: 1px solid rgba(0, 0, 0, 0.54);
   background: linear-gradient(180deg, rgba(48, 126, 67, 0.05) 0%, rgba(42, 92, 54, 0.5) 68.75%);
-  margin: 1rem 3%;
+  margin: 0.5rem 3%;
+}
+
+.contact-body {
+  background-color: #201E1E;
+  margin: 2rem 3.5rem;
+  padding: 2rem;
+  border-radius: 15px;
+}
+.contact-body form {
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+}
+.contact-body form input {
+  background: rgba(126, 124, 124, 0.5);
+  border: none;
+  padding: 0.5rem;
+  font-size: 20px;
+  color: #FFF;
+  width: 330px;
+  margin: 0.6rem 0;
 }
 
 .standartButton1 {
@@ -295,8 +317,15 @@ a:visited {
   color: #FFF;
   font-size: 20px;
 }
-.contact-body h2 {
-  font-size: 20px;
+.contact-body h2, .contact-body span {
+  font-size: 30px;
+  color: #FFF;
+  line-height: 144.518%; /* 101.162px */
+  letter-spacing: 4.2px;
+  margin-bottom: 1.5rem;
+}
+.contact-body span {
+  color: #316C40;
 }
 
 * {

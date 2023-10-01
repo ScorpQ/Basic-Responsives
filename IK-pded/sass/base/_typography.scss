@@ -44,8 +44,15 @@ a{
         }
     }
     &-body{
-        h2{
-            font-size: 20px;
+        h2, span{
+            font-size: 30px;
+            color: $white1;
+            line-height: 144.518%; /* 101.162px */
+            letter-spacing: 4.2px;
+            margin-bottom: 1.5rem;
+        }
+        span{
+            color: $green1;
         }
     }
 }
