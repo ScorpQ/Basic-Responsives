@@ -3,15 +3,15 @@
 header{
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     padding: 2rem 0;
     nav{
-        width: 13rem;
         display: flex;
         justify-content: space-between;
         a{
             color: $white1;
             font-size: 1.3rem;
+            margin: 0 0.6rem;
         }
         a:after{
             content:'';

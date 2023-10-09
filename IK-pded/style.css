@@ -1,17 +1,17 @@
 header {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   padding: 2rem 0;
 }
 header nav {
-  width: 13rem;
   display: flex;
   justify-content: space-between;
 }
 header nav a {
   color: #FFF;
   font-size: 1.3rem;
+  margin: 0 0.6rem;
 }
 header nav a:after {
   content: "";
@@ -287,7 +287,7 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: inherit;
+  color: #FFF;
 }
 
 .services h2 {
