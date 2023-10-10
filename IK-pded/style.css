@@ -7,11 +7,12 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
+  /* 4 bilzik 1 set */
 }
 header nav a {
   color: #FFF;
   font-size: 1.3rem;
-  margin: 0 0.6rem;
+  margin: 0 0.5rem;
 }
 header nav a:after {
   content: "";
@@ -52,12 +53,62 @@ header .hamburger:hover .bar3 {
 
 @media only screen and (max-width: 900px) {
   nav {
-    display: none !important;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgb(30, 30, 28);
+    inset: 0 0 0 0;
+    padding: 10rem;
+    align-items: center;
+  }
+  nav a {
+    font-size: 2rem !important;
+  }
+  nav[data-visible=true] {
+    display: flex;
   }
   .hamburger {
     display: block !important;
+    z-index: 10;
+    position: fixed;
+    left: calc(100% - 100px);
   }
 }
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5rem;
+  color: #FFF;
+}
+.footer h4 {
+  color: #FFF;
+  font-size: 25px;
+  line-height: 4rem;
+}
+.footer ul {
+  list-style-type: none;
+  line-height: 2.2rem;
+  font-size: 18px;
+}
+.footer .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  width: min-content;
+}
+.footer-icons img {
+  width: 50px;
+}
+.footer-icons a {
+  background-color: #316C40;
+  margin: 0.3rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
 .banner {
   padding: 5rem 5%;
 }
@@ -174,23 +225,6 @@ header .hamburger:hover .bar3 {
   line-height: 144.518%; /* 138.737px */
   letter-spacing: 5.76px;
   color: #FFF;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 5rem;
-  color: #FFF;
-}
-.footer h4 {
-  color: #FFF;
-  font-size: 25px;
-  line-height: 4rem;
-}
-.footer ul {
-  list-style-type: none;
-  line-height: 2.2rem;
-  font-size: 18px;
 }
 
 @media only screen and (max-width: 1024px) {

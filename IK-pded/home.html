@@ -7,6 +7,8 @@
 
     <!-- style link -->
     <link rel="stylesheet" href="style.css">
+    <!-- scripy link -->
+    <script src="scripts/script.js" async></script>
     <!-- fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +17,7 @@
 <body>
     <header>
         <h1><a href="home.html">PDED</a></h1>
-        <nav>
+        <nav data-visible="false">
             <a href="hizmetler.html">Hizmetlerimiz</a>
             <a href="contact.html">Hedeflerimiz</a>
             <a href="contact.html">SSS</a>
@@ -23,7 +25,7 @@
             <a href="contact.html">Blog</a>
             <a href="contact.html">İletişim</a>
         </nav>
-        <div class="hamburger">
+        <div class="hamburger" data-expend="false">
             <div class="bar1"></div>  
             <div class="bar2"></div>
             <div class="bar3"></div>   
@@ -103,8 +105,9 @@
     <div class="footer">
         <div class="column">
             <h4>Sosyal Medya</h4>
-            <div>
-                
+            <div class="footer-icons">
+                <a href=""><img src="assets/icons/int.svg"/></a>
+                <a href=""><img src="assets/icons/X.svg"/></a>
             </div>
         </div>
         <div class="column">

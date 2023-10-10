@@ -11,7 +11,7 @@ header{
         a{
             color: $white1;
             font-size: 1.3rem;
-            margin: 0 0.6rem;
+            margin: 0 0.5rem;
         }
         a:after{
             content:'';
@@ -20,7 +20,7 @@ header{
             height: 1px;
             background-color: $white1;
             transition: width 0.3s ease;
-        }
+        }       /* 4 bilzik 1 set */
         a:hover:after{
             width: 100%;
         }
@@ -52,17 +52,30 @@ header{
             }  
         }
     }
-}
+}   
 
 
 @media only screen and (max-width: 900px){
     nav{
-        display: none !important;
+        flex-direction: column;
+        position: fixed;
+        background-color: rgb(30, 30, 28);
+        inset: 0 0 0 0;
+        padding: 10rem;
+        align-items: center;
+        a{
+            font-size: 2rem !important;
+        }
+    }
+    nav[data-visible='true']{
+        display: flex;
     }
     .hamburger{
         display: block !important;
+        z-index: 10;
+        position: fixed;
+        left: calc(100% - 100px);
     }
 }
-
 
 
