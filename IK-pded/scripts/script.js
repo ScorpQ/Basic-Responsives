@@ -1,7 +1,11 @@
-const primaryNav = document.querySelector('nav');
+const primaryNav = document.querySelector('header');
 const navToggle = document.querySelector('.hamburger');
 
-navToggle.addEventListener("click", () => {
-    const visibility = primaryNav.getAttribute("data-visible");
-    console.log(visibility);
+navToggle.addEventListener("click", () => { 
+    if(primaryNav.getAttribute("data-visible") === "false"){
+        primaryNav.setAttribute("data-visible","true");
+    }
+    else{
+        primaryNav.setAttribute("data-visible","false");
+    }   
 })

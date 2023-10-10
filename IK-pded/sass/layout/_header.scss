@@ -27,8 +27,8 @@ header{
     }
     .hamburger{
         display: none;
-        min-width: 3.5rem;
-        margin: 5px 10px 10px 10px;
+        width: 3.5rem;
+        height: 2rem;
         div{
             height: 0.4rem;
             margin-bottom: 10px;
@@ -38,43 +38,52 @@ header{
             transform-origin: left center;
             border-radius: 5rem;
         }
-        &:hover {
-            .bar1{
-                transform: rotate(32deg);
-                width: 120%;
-            }   
-            .bar2{
-                width: 0%;
-            }
-            .bar3{
-                transform: rotate(-30deg);
-                width: 120%;
-            }  
-        }
     }
 }   
 
 
 @media only screen and (max-width: 900px){
     nav{
+        display: flex !important;
         flex-direction: column;
-        position: fixed;
-        background-color: rgb(30, 30, 28);
-        inset: 0 0 0 0;
-        padding: 10rem;
+        justify-content: space-around !important;
         align-items: center;
+        padding-bottom: 5rem;
+        position: fixed;
+        inset: 0 0 0 0;
+        background-color: rgb(30, 30, 28);
         a{
             font-size: 2rem !important;
         }
-    }
-    nav[data-visible='true']{
-        display: flex;
+        transform: translateX(100%);
+        transition: transform 0.5s ease;
     }
     .hamburger{
         display: block !important;
         z-index: 10;
-        position: fixed;
-        left: calc(100% - 100px);
+    }
+
+
+    header[data-visible='true']{
+        nav{
+            transform: translateX(0%);
+            overflow: hidden;
+        }
+        .hamburger{
+            position: fixed;
+            left: calc(100% - 5rem);
+            .bar1{
+                transform: rotate(40deg);
+                width: 100%;
+            }   
+            .bar2{
+                width: 0%;
+            }
+            .bar3{
+                transform: rotate(-36deg);
+                width: 100%;
+            } 
+        }
     }
 }
 

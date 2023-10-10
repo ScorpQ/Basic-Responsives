@@ -27,8 +27,8 @@ header nav a:hover:after {
 }
 header .hamburger {
   display: none;
-  min-width: 3.5rem;
-  margin: 5px 10px 10px 10px;
+  width: 3.5rem;
+  height: 2rem;
 }
 header .hamburger div {
   height: 0.4rem;
@@ -39,38 +39,45 @@ header .hamburger div {
   transform-origin: left center;
   border-radius: 5rem;
 }
-header .hamburger:hover .bar1 {
-  transform: rotate(32deg);
-  width: 120%;
-}
-header .hamburger:hover .bar2 {
-  width: 0%;
-}
-header .hamburger:hover .bar3 {
-  transform: rotate(-30deg);
-  width: 120%;
-}
 
 @media only screen and (max-width: 900px) {
   nav {
+    display: flex !important;
     flex-direction: column;
-    position: fixed;
-    background-color: rgb(30, 30, 28);
-    inset: 0 0 0 0;
-    padding: 10rem;
+    justify-content: space-around !important;
     align-items: center;
+    padding-bottom: 5rem;
+    position: fixed;
+    inset: 0 0 0 0;
+    background-color: rgb(30, 30, 28);
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
   }
   nav a {
     font-size: 2rem !important;
   }
-  nav[data-visible=true] {
-    display: flex;
-  }
   .hamburger {
     display: block !important;
     z-index: 10;
+  }
+  header[data-visible=true] nav {
+    transform: translateX(0%);
+    overflow: hidden;
+  }
+  header[data-visible=true] .hamburger {
     position: fixed;
-    left: calc(100% - 100px);
+    left: calc(100% - 5rem);
+  }
+  header[data-visible=true] .hamburger .bar1 {
+    transform: rotate(40deg);
+    width: 100%;
+  }
+  header[data-visible=true] .hamburger .bar2 {
+    width: 0%;
+  }
+  header[data-visible=true] .hamburger .bar3 {
+    transform: rotate(-36deg);
+    width: 100%;
   }
 }
 .footer {
