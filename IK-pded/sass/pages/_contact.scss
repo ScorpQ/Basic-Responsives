@@ -14,20 +14,34 @@
     margin: 2rem 3.5rem;
     padding: 2rem;
     border-radius: 15px;
+    position: relative;
 
     form{
         display: flex;
         flex-direction: column;
-        color: rgba(255, 255, 255, 0.80);
+        color: rgba(255, 255, 255, 0.80);   
         font-size: 20px;
-        input{
+        height: 44rem;
+        input , textarea{
             background: rgba(126, 124, 124, 0.50);
             border: none;
-            padding: .5rem;
-            font-size: 20px;
+            padding: 0.5rem;
+            font-size: 25px;
             color: $white1;
-            width: 330px;
+            width: 25vw;
             margin: 0.6rem 0;
+            border-radius: 5px;
+        }
+        textarea{
+            font-size: 20px;
+            width: 50%;
         }
     }
+    button{
+        margin: 0;
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }   
 }

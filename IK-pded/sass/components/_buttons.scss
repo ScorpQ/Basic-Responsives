@@ -4,15 +4,30 @@
     width: min-content;
     border: 2px solid $grey1;
     color: $white1;
-    text-align: center;
     border-radius: 15px;
     padding: 1rem 3rem;
     white-space: nowrap;
     font-size: 1.5rem;
     transition: all 0.3s ease;
     cursor: pointer;
+    &:hover{
+        border-color: $white1;
+    }
 }
 
-.standartButton1:hover{
-    border-color: $white1;
+.submitButton{
+    border: 2px solid $grey1;
+    background-color: $grey2;
+    color: $white1;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    white-space: nowrap;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover{
+        border-color: $white1;
+    }
 }
+

@@ -285,28 +285,41 @@ header .hamburger div {
   margin: 2rem 3.5rem;
   padding: 2rem;
   border-radius: 15px;
+  position: relative;
 }
 .contact-body form {
   display: flex;
   flex-direction: column;
   color: rgba(255, 255, 255, 0.8);
   font-size: 20px;
+  height: 44rem;
 }
-.contact-body form input {
+.contact-body form input, .contact-body form textarea {
   background: rgba(126, 124, 124, 0.5);
   border: none;
   padding: 0.5rem;
-  font-size: 20px;
+  font-size: 25px;
   color: #FFF;
-  width: 330px;
+  width: 25vw;
   margin: 0.6rem 0;
+  border-radius: 5px;
+}
+.contact-body form textarea {
+  font-size: 20px;
+  width: 50%;
+}
+.contact-body button {
+  margin: 0;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .standartButton1 {
   width: min-content;
   border: 2px solid #525252;
   color: #FFF;
-  text-align: center;
   border-radius: 15px;
   padding: 1rem 3rem;
   white-space: nowrap;
@@ -314,8 +327,22 @@ header .hamburger div {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
 .standartButton1:hover {
+  border-color: #FFF;
+}
+
+.submitButton {
+  border: 2px solid #525252;
+  background-color: #201E1E;
+  color: #FFF;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  white-space: nowrap;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.submitButton:hover {
   border-color: #FFF;
 }
 
