@@ -52,13 +52,14 @@ header .hamburger div {
     background-color: rgb(30, 30, 28);
     transform: translateX(100%);
     transition: transform 0.5s ease;
+    z-index: 100;
   }
   nav a {
     font-size: 2rem !important;
   }
   .hamburger {
     display: block !important;
-    z-index: 10;
+    z-index: 1000;
   }
   header[data-visible=true] nav {
     transform: translateX(0%);
@@ -316,6 +317,14 @@ header .hamburger div {
   transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 900px) {
+  form {
+    align-items: center;
+  }
+  input, textarea {
+    width: 40vw !important;
+  }
+}
 .standartButton1 {
   width: min-content;
   border: 2px solid #525252;

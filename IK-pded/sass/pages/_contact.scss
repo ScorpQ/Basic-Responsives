@@ -45,3 +45,12 @@
         transform: translate(-50%, -50%);
     }   
 }
+
+@media only screen and (max-width: 900px){
+    form{
+       align-items: center;
+    }
+    input, textarea{
+        width: 40vw !important;
+    }
+}
