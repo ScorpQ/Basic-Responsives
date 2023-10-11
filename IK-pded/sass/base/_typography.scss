@@ -12,6 +12,22 @@ a{
     }
 }
 
+.head{
+    h2{
+        color: $white1;
+        font-size: 50px;
+        line-height: 144.518%; /* 187.873px */
+        letter-spacing: 7.8px;
+    }
+    p{
+        line-height: 144.518%; /* 69.368px */
+        letter-spacing: 2.88px;
+        color: $white1;
+        font-size: 20px;
+    }
+}
+
+
 .services h2{
     text-align: center;
     font-size: 25px;
@@ -29,20 +45,6 @@ a{
 
 
 .contact {
-    &-head{
-        h2{
-            color: $white1;
-            font-size: 50px;
-            line-height: 144.518%; /* 187.873px */
-            letter-spacing: 7.8px;
-        }
-        p{
-            line-height: 144.518%; /* 69.368px */
-            letter-spacing: 2.88px;
-            color: $white1;
-            font-size: 20px;
-        }
-    }
     &-body{
         h2, span{
             font-size: 30px;

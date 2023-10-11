@@ -1,14 +1,5 @@
 @use '../abstracts/colors' as *;
 
-.contact-head{
-    padding: 3rem 3rem;
-    height: 220px;
-    border-radius: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.54);
-    background: linear-gradient(180deg, rgba(48, 126, 67, 0.05) 0%, rgba(42, 92, 54, 0.50) 68.75%);
-    margin: 0.5rem 3%;
-}
-
 .contact-body{
     background-color: $grey2;
     margin: 2rem 3.5rem;

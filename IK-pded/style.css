@@ -118,6 +118,15 @@ header .hamburger div {
   border-radius: 50%;
 }
 
+.head {
+  padding: 3rem 3rem;
+  height: 220px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  background: linear-gradient(180deg, rgba(48, 126, 67, 0.05) 0%, rgba(42, 92, 54, 0.5) 68.75%);
+  margin: 0.5rem 3%;
+}
+
 .banner {
   padding: 5rem 5%;
 }
@@ -273,15 +282,6 @@ header .hamburger div {
 /* 
 
 */
-.contact-head {
-  padding: 3rem 3rem;
-  height: 220px;
-  border-radius: 15px;
-  border: 1px solid rgba(0, 0, 0, 0.54);
-  background: linear-gradient(180deg, rgba(48, 126, 67, 0.05) 0%, rgba(42, 92, 54, 0.5) 68.75%);
-  margin: 0.5rem 3%;
-}
-
 .contact-body {
   background-color: #201E1E;
   margin: 2rem 3.5rem;
@@ -368,6 +368,19 @@ a:visited {
   color: #FFF;
 }
 
+.head h2 {
+  color: #FFF;
+  font-size: 50px;
+  line-height: 144.518%; /* 187.873px */
+  letter-spacing: 7.8px;
+}
+.head p {
+  line-height: 144.518%; /* 69.368px */
+  letter-spacing: 2.88px;
+  color: #FFF;
+  font-size: 20px;
+}
+
 .services h2 {
   text-align: center;
   font-size: 25px;
@@ -383,18 +396,6 @@ a:visited {
   letter-spacing: 2.88px;
 }
 
-.contact-head h2 {
-  color: #FFF;
-  font-size: 50px;
-  line-height: 144.518%; /* 187.873px */
-  letter-spacing: 7.8px;
-}
-.contact-head p {
-  line-height: 144.518%; /* 69.368px */
-  letter-spacing: 2.88px;
-  color: #FFF;
-  font-size: 20px;
-}
 .contact-body h2, .contact-body span {
   font-size: 30px;
   color: #FFF;
@@ -12275,5 +12276,3 @@ body {
   margin: auto;
   background: #121212;
 }
-
-/*# sourceMappingURL=style.css.map */
