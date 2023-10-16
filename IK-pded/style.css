@@ -120,7 +120,7 @@ header .hamburger div {
 
 .head {
   padding: 3rem 3rem;
-  height: 220px;
+  height: 80%;
   border-radius: 15px;
   border: 1px solid rgba(0, 0, 0, 0.54);
   background: linear-gradient(180deg, rgba(48, 126, 67, 0.05) 0%, rgba(42, 92, 54, 0.5) 68.75%);
@@ -326,6 +326,11 @@ header .hamburger div {
     width: 40vw !important;
   }
 }
+.sss-body {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .standartButton1 {
   width: min-content;
   border: 2px solid #525252;
@@ -12276,3 +12281,5 @@ body {
   margin: auto;
   background: #121212;
 }
+
+/*# sourceMappingURL=style.css.map */
