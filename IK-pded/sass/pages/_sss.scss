@@ -4,3 +4,26 @@
     width: 90%;
     margin: 0 auto;
 }
+/* Sınıfı accordion-item olan divlerimi seçtim ki bu divler bizi contentimiz arkplan ve yazı renklerini ayarlamak için  */
+ .accordion .accordion-item{
+     background-color: rgb(18,18,18);
+     color: rgb(184,184,184);
+ }
+ /* Sınıfı accordion-item olan divlerimin içerisinde bulunan h2'lerin ve onların içinde bulunan buttonların arkaplan ve yazı renklerini değiştirmek için seçtim */
+.accordion-item h2 button{
+    background-color: $black1;
+    color: rgb(184,184,184);
+    font-size: 23px !important;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: $green1 !important;
+    color: white !important ;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+.accordion-item{
+    border-color: $grey5 !important;
+}

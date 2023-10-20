@@ -331,6 +331,32 @@ header .hamburger div {
   margin: 0 auto;
 }
 
+/* Sınıfı accordion-item olan divlerimi seçtim ki bu divler bizi contentimiz arkplan ve yazı renklerini ayarlamak için  */
+.accordion .accordion-item {
+  background-color: rgb(18, 18, 18);
+  color: rgb(184, 184, 184);
+}
+
+/* Sınıfı accordion-item olan divlerimin içerisinde bulunan h2'lerin ve onların içinde bulunan buttonların arkaplan ve yazı renklerini değiştirmek için seçtim */
+.accordion-item h2 button {
+  background-color: #161616;
+  color: rgb(184, 184, 184);
+  font-size: 23px !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #316C40 !important;
+  color: white !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-item {
+  border-color: #636363 !important;
+}
+
 .standartButton1 {
   width: min-content;
   border: 2px solid #525252;
