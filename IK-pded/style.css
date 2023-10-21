@@ -421,6 +421,7 @@ h1 {
 }
 
 a {
+  color: #FFF !important;
   text-decoration: none !important;
 }
 a:visited {
