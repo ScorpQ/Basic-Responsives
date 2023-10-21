@@ -152,12 +152,15 @@
         width: 100% !important;
         padding: 0 1rem;
     }
-    .blog-box{
-        &-text{
-            text-align: center;
-        }
-        img{
-            display: none;
+    .blog {
+        padding: 1rem 2rem;
+        &-box{
+            &-text{
+                text-align: center;
+            }
+            img{
+                display: none;
+            }
         }
     }
     .footer{
@@ -168,6 +171,15 @@
         font-size: 15px;
        }
     }
+}
+@media only screen and (max-width: 500px){
+    .footer{
+        flex-direction: column;
+        h4{
+            font-size: 25px;
+        } 
+        row-gap: 2rem;
+     }
 }
 
 

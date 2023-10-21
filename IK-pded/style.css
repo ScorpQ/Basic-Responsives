@@ -279,6 +279,9 @@ header .hamburger div {
     width: 100% !important;
     padding: 0 1rem;
   }
+  .blog {
+    padding: 1rem 2rem;
+  }
   .blog-box-text {
     text-align: center;
   }
@@ -290,6 +293,15 @@ header .hamburger div {
   }
   .footer ul {
     font-size: 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .footer h4 {
+    font-size: 25px;
   }
 }
 /* 
