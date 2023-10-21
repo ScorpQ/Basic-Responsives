@@ -1,0 +1,10 @@
+@use '../abstracts/colors' as *;
+/* content-body ve content-head kısmının margin ve color kısımları ayarlandı */
+.content-body{
+    margin: 0.5rem 7%;
+    color: $white1;
+    
+}
+.content-head{
+    margin-bottom: 30px;
+}

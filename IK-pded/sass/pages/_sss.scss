@@ -27,3 +27,11 @@
 .accordion-item{
     border-color: $grey5 !important;
 }
+/* accordion içerisindeki content kısmının font size'ı 22px yapıldı */
+.accordion{
+    .accordion-item{
+            .accordion-body{
+                font-size: 20px;
+            }
+    }
+}

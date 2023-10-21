@@ -97,6 +97,11 @@ header .hamburger div {
   list-style-type: none;
   line-height: 2.2rem;
   font-size: 18px;
+  padding-left: 0;
+  width: max-content;
+}
+.footer ul li:hover {
+  font-size: 19px;
 }
 .footer .column {
   display: flex;
@@ -116,6 +121,10 @@ header .hamburger div {
   margin: 0.3rem;
   padding: 1rem;
   border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.footer-icons a:hover {
+  border-radius: 40%;
 }
 
 .head {
@@ -175,11 +184,15 @@ header .hamburger div {
   border-radius: 15px;
   border: 1px solid rgba(78, 78, 78, 0.5);
   background: linear-gradient(180deg, rgba(48, 126, 67, 0.07) 0%, rgba(42, 92, 54, 0.8) 68.75%);
+  transition: all 0.3s ease;
   padding: 4rem 1rem;
   cursor: pointer;
 }
 .services-container-box img {
   width: 20%;
+}
+.services-container-box:hover {
+  border: 1px solid rgba(202, 201, 201, 0.5);
 }
 
 .blog {
@@ -357,6 +370,21 @@ header .hamburger div {
   border-color: #636363 !important;
 }
 
+/* accordion içerisindeki content kısmının font size'ı 22px yapıldı */
+.accordion .accordion-item .accordion-body {
+  font-size: 20px;
+}
+
+/* content-body ve content-head kısmının margin ve color kısımları ayarlandı */
+.content-body {
+  margin: 0.5rem 7%;
+  color: #FFF;
+}
+
+.content-head {
+  margin-bottom: 30px;
+}
+
 .standartButton1 {
   width: min-content;
   border: 2px solid #525252;
@@ -393,7 +421,7 @@ h1 {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 a:visited {
   color: #FFF;

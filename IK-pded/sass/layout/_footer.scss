@@ -14,7 +14,12 @@
     ul{
         list-style-type: none;
         line-height: 2.2rem;
-        font-size: 18px
+        font-size: 18px;
+        padding-left: 0;
+        width: max-content;
+        li:hover{
+            font-size: 19px;
+        }
     }
     .column{
         display: flex;
@@ -33,6 +38,11 @@
             margin: 0.3rem;
             padding: 1rem;
             border-radius: 50%;
+            transition: all 0.3s ease;
+
+        }
+        a:hover{
+            border-radius: 40%;
         }
     }
 }
