@@ -171,21 +171,14 @@
         font-size: 15px;
        }
     }
-    .footer{
-        flex-direction: column;
-        h4{
-            font-size: 25px;
-        } 
-        row-gap: 2rem;
-     }
 }
 @media only screen and (max-width: 500px){
     .footer{
-        flex-direction: column;
+        flex-direction: column !important;
         h4{
-            font-size: 25px;
+            font-size: 25px !important;
         } 
-        row-gap: 2rem;
+        row-gap: 2rem !important;
      }
 }
 
