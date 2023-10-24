@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+}
+body{
+    width: 80%;
+    max-width: 1400px;
+    margin: auto;
+    background-color: #121212 !important;
+}
+:root {
+    --white1: #FFF;
+    --grey1: #525252;
+    --grey2: #201E1E;
+    --grey3: #BCBBBB;
+    --grey4: #CFCFCF;
+    --grey5: #636363;
+    --green1: #316C40;
+    --black1: #161616;
+}
+
+/* GENERAL CSS */
+a{
+    color: var(--white1) !important;
+    text-decoration: none !important;
+}
+
+a:visited{
+    color: var(--white1);
+}
+/* **********  */
+
+/* HEADER CSS */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}   
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+header nav a{
+    color: var(--white1);
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+}
+header a:after{
+    content:'';
+    display: block;
+    width: 0%;  
+    height: 1px;
+    background-color: var(--white1);
+    transition: width 0.3s ease;
+}       /* 4 bilzik 1 set */
+header a:hover:after{
+    width: 100%;
+}
+header .hamburger{
+    display: none;
+    width: 3.5rem;
+    height: 2rem;
+}
+header .hamburger div{
+    height: 0.4rem;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: var(--grey1);
+    transition: all 0.3s ease;
+    transform-origin: left center;
+    border-radius: 5rem;
+}
+/*  **********  */
+
+/* HEADER MEDIA Q. */
+@media only screen and (max-width: 900px){
+    nav{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-around !important;
+        align-items: center;
+        padding-bottom: 5rem;
+        position: fixed;
+        inset: 0 0 0 0;
+        background-color: rgb(30, 30, 28);
+        transform: translateX(100%);
+        transition: transform 0.5s ease;
+        z-index: 100;
+    }
+    nav a{
+        font-size: 2rem !important;
+    }
+    
+    .hamburger{
+        display: block !important;
+        z-index:1000;
+    }
+
+
+        header[data-visible="true"] nav{
+            transform: translateX(0%);
+            overflow: hidden;
+            background-color: #316C40;
+        }
+        header[data-visible="true"] .hamburger{
+            position: fixed;
+            left: 83%;
+        }
+        header[data-visible="true"] .hamburger .bar1{
+            transform: rotate(40deg);
+            width: 100%;
+        }   
+        header[data-visible="true"]  .hamburger .bar2{
+            width: 0%;
+        }
+        header[data-visible="true"]  .hamburger .bar3{
+            transform: rotate(-36deg);
+            width: 100%;
+        } 
+    }
+
+/*  **********  */
