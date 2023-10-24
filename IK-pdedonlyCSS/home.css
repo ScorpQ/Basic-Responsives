@@ -99,7 +99,6 @@ header .hamburger div{
         z-index:1000;
     }
 
-
         header[data-visible="true"] nav{
             transform: translateX(0%);
             overflow: hidden;
