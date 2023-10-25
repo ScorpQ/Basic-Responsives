@@ -240,13 +240,16 @@ header .hamburger div{
       padding: 0 1rem;
     }
     .blog {
-      padding: 1rem 2rem;
+      padding: 0rem 1.5rem !important;
     }
     .blog-box-text {
       text-align: center;
     }
     .blog-box img {
       display: none;
+    }
+    .blog-box{
+        padding: 1rem !important;
     }
     .footer h4 {
       font-size: 20px;
@@ -256,3 +259,59 @@ header .hamburger div{
     }
     }
 /* ************** */
+
+
+/* BLOG CSS */
+
+.blog {
+    padding: 1rem 5rem;
+  }
+  .blog-header {
+    padding-bottom: 2rem;
+  }
+  .blog-header h2 {
+    text-align: center;
+    font-size: 35px;
+    line-height: 144.518%; /* 138.737px */
+    letter-spacing: 5.76px;
+    color: #FFF;
+  }
+  .blog-header h2 span {
+    color: #316C40;
+    font-size: 35px;
+  }
+  .blog-header p {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1.08px;
+  }
+  .blog-container .blog-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #201E1E;
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    height: 250px;
+  }
+  .blog-container .blog-box-text {
+    overflow: hidden;
+    width: 100%;
+    padding-right: 1rem;
+  }
+  .blog-container .blog-box-text h3 {
+    color: #FFF;
+    font-size: 40px;
+    padding-bottom: 1rem;
+  }
+  .blog-container .blog-box-text p {
+    color: #FFF;
+    font-size: 20px;
+  }
+  .blog-container .blog-box img {
+    align-self: center;
+    width: 20%;
+    min-width: 150px;
+    border-radius: 50%;
+    padding: 1rem;
+  }
