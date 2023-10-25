@@ -122,3 +122,55 @@ header .hamburger div{
     }
 
 /*  **********  */
+
+/*BANNER STYLE*/
+.banner{
+    padding: 5rem 5%;
+}
+.banner .banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-container .banner-container-right{
+    text-align: center;
+}
+.banner-container .banner-container-right p{
+    font-size: 35px;
+    line-height: 145.518%;
+    letter-spacing: 3.6px;
+    padding: 4rem 0;
+    color: var(--white1);
+}
+.banner-container .banner-container-left{
+    padding: 0 3rem;
+    max-width: 350px;
+}
+.banner-container .banner-container-left img{
+    width: 100%;
+    min-width: 226px;
+}
+/*Link style inside the banner*/
+.standartButton1{
+    width: min-content;
+    border: 2px solid var(--grey1);
+    color: var(--white1);
+    border-radius: 15px;
+    padding: 1rem 3rem;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.standartButton1:hover{
+    border-color: var(--white1);
+}
+/* ************ */
+
+/*BANNER MEDİA Q. */
+@media only screen and (max-width: 900px){
+    .banner-container{
+        flex-direction: column;
+    }
+}
