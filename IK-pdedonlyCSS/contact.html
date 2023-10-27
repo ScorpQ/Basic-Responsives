@@ -36,25 +36,21 @@
             <h2>İletişim</h2>
             <p>Pded ile iletişime geçme zamanı.</p>
         </div>
+
         <div class="contact-body">
             <h2>İletişim <span>Bilgileriniz</span></h2>
-            <form name="form1" action="">
+
+            <form action="https://formsubmit.co/cansin.lale@ipssolidarity.com" method="POST">
                 <label for="isim-soyisim">İsim Soyisim(zorunlu)</label>
-                <input type="text" id="isim-soyisim" name="isim-soyisim" required>
+                <input type="text" id="isim-soyisim" name="name" required>
 
                 <label for="telefon">Telefon(zorunlu)</label>
-                <input type="tel" name="telefon" placeholder="XXX XXX XXXX" pattern="[0-9]{3}" maxlength="12"  required/>  
+                <input type="tel" name="telefon" placeholder="XXX XXX XXXX" required/>  
                 
                 <label for="email">E-mail(zorunlu)</label>
                 <input type="email" name="email" size="30" required/>  
-
-                <label for="subject">Konu(opsiyonel)</label>
-                <input type="text" name="subject" size="20"/>  
-
-                <label for="subject">Proje Detayı(Zorunlu)</label>
-                <textarea type="text" name="subject" size="20" rows="7" required></textarea>  
+                <button class="submitButton" type="submit">Send</button>
             </form> 
-            <button class="submitButton" type="submit" form="form1" value="Submit">Formu Gönder</button>
         </div>
     </div>
 
