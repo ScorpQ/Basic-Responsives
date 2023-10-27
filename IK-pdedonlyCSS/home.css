@@ -102,22 +102,22 @@ header .hamburger div{
         header[data-visible="true"] nav{
             transform: translateX(0%);
             overflow: hidden;
-            background-color: #316C40;
+                background-color: rgb(30, 30, 28);
         }
         header[data-visible="true"] .hamburger{
             position: fixed;
             left: 83%;
         }
         header[data-visible="true"] .hamburger .bar1{
-            transform: rotate(40deg);
-            width: 100%;
+            transform: rotate(38deg);
+            width: 95% !important;
         }   
         header[data-visible="true"]  .hamburger .bar2{
             width: 0%;
         }
         header[data-visible="true"]  .hamburger .bar3{
-            transform: rotate(-36deg);
-            width: 100%;
+            transform: rotate(-38deg);
+            width: 95% !important;
         } 
     }
 
@@ -170,6 +170,9 @@ header .hamburger div{
 
 /*BANNER MEDİA Q. */
 @media only screen and (max-width: 900px){
+    .banner{
+      padding-top: 1rem;
+    }
     .banner-container{
         flex-direction: column;
     }
@@ -315,3 +318,90 @@ header .hamburger div{
     border-radius: 50%;
     padding: 1rem;
   }
+  /* ********* */
+
+
+  /* partners css */
+  .partners {
+    padding: 10rem 0;
+    height: 100px;
+  }
+  .partners h2 {
+    text-align: center;
+    font-size: 35px;
+    line-height: 144.518%; /* 138.737px */
+    letter-spacing: 5.76px;
+    color: #FFF;
+  }
+  .partners-body{
+    text-align: center;
+  }
+  /* ***********  */
+
+
+  /* footer css */
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5rem;
+    color: #FFF;
+  }
+  .footer h4 {
+    color: #FFF;
+    font-size: 25px;
+    line-height: 4rem;
+  }
+  .footer ul {
+    list-style-type: none;
+    line-height: 2.2rem;
+    font-size: 18px;
+    padding-left: 0;
+    width: max-content;
+  }
+  .footer ul li:hover {
+    font-size: 19px;
+  }
+  .footer .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    width: min-content;
+  }
+  .footer-icons img {
+    width: 50px;
+  }
+  .footer-icons a {
+    background-color: #316C40;
+    margin: 0.3rem;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  .footer-icons a:hover {
+    border-radius: 40%;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .footer {
+      flex-direction: column !important;
+      row-gap: 2rem !important;
+    }
+    .footer h4 {
+      font-size: 25px !important;
+    }
+    .hamburger div {
+      height: 0.25rem !important;
+      width: 90% !important;
+    }
+    header[data-visible="true"]  .hamburger .bar2{
+      width: 0% !important;
+  }
+  .footer ul {
+    font-size: 15px !important;
+  }
+}
+  /* ********** */

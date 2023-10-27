@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPSS</title>
+
+    <!-- style link -->
+    <link rel="stylesheet" href="contact.css">
+    <script src="script.js" defer></script>
+    
+    <!-- fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header data-visible="false">
+        <h1><a href="index.html">IPSS</a></h1>
+        <nav>
+            <a href="hizmetler.html">Hizmetlerimiz</a>
+            <a href="hedef.html">Hedeflerimiz</a>
+            <a href="sss.html">SSS</a>
+            <a href="bizkimiz.html">Biz Kimiz</a>
+            <a href="contact.html">İletişim</a>
+        </nav>
+        <div class="hamburger">
+            <div class="bar1"></div>  
+            <div class="bar2"></div>
+            <div class="bar3"></div>   
+        </div>
+    </header>
+    
+    <div class="contact">
+        <div class="head">
+            <h2>İletişim</h2>
+            <p>Pded ile iletişime geçme zamanı.</p>
+        </div>
+        <div class="contact-body">
+            <h2>İletişim <span>Bilgileriniz</span></h2>
+            <form name="form1" action="">
+                <label for="isim-soyisim">İsim Soyisim(zorunlu)</label>
+                <input type="text" id="isim-soyisim" name="isim-soyisim" required>
+
+                <label for="telefon">Telefon(zorunlu)</label>
+                <input type="tel" name="telefon" placeholder="XXX XXX XXXX" pattern="[0-9]{3}" maxlength="12"  required/>  
+                
+                <label for="email">E-mail(zorunlu)</label>
+                <input type="email" name="email" size="30" required/>  
+
+                <label for="subject">Konu(opsiyonel)</label>
+                <input type="text" name="subject" size="20"/>  
+
+                <label for="subject">Proje Detayı(Zorunlu)</label>
+                <textarea type="text" name="subject" size="20" rows="7" required></textarea>  
+            </form> 
+            <button class="submitButton" type="submit" form="form1" value="Submit">Formu Gönder</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="column">
+            <h4>Sosyal Medya</h4>
+            <div class="footer-icons">
+                <a target="_blank" href="https://www.instagram.com/ipssinstutite/"><img src="assets/icons/int.svg"/></a>
+                <a target="_blank" href="https://www.instagram.com/ipssinstutite/"><img src="assets/icons/X.svg"/></a>
+            </div>
+        </div>
+        <div class="column">
+            <h4>Kurumsal</h4>
+            <ul>
+                <li><a href="hedef.html">Hedeflerimiz</a></li>
+                <li><a href="sss.html">SSS</a></li>
+                <li><a>Blog Yazıları</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>Hizmetlerimiz</h4>
+            <ul>
+                <li><a href="contact.html">Robotik Kodlama</a></li>
+                <li><a href="contact.html">Web Tasarım</a></li>
+                <li><a href="contact.html">Kurumsal Yazılım</a></li>
+                <li><a href="contact.html">Mobil Uygulama</a></li>
+                <li><a href="contact.html">Görüntü Ses İşleme</a></li>
+                <li><a href="contact.html">Teknik Çizim</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
