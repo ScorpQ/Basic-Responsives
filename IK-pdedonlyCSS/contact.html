@@ -42,14 +42,21 @@
 
             <form action="https://formsubmit.co/cansin.lale@ipssolidarity.com" method="POST">
                 <label for="isim-soyisim">İsim Soyisim(zorunlu)</label>
-                <input type="text" id="isim-soyisim" name="name" required>
+                <input type="text" maxlength="25" id="isim-soyisim" name="name" pattern="[a-zA-Z'-'\s]*" title="Lütfen harf giriniz" required>
 
                 <label for="telefon">Telefon(zorunlu)</label>
-                <input type="tel" name="telefon" placeholder="XXX XXX XXXX" required/>  
+                <input type="tel" maxlength="10" name="telefon" placeholder="XXX XXX XXXX" pattern="\d{3}\d{3}\d{4}"  title="Lütfen sadece sayı girin(XXX XXX XXXX)" required/>  
                 
                 <label for="email">E-mail(zorunlu)</label>
-                <input type="email" name="email" size="30" required/>  
-                <button class="submitButton" type="submit">Send</button>
+                <input type="email" maxlength="25" name="email" size="30" required/>  
+
+                <label for="subject">Konu(opsiyonel)</label>
+                <input type="text" name="subject" size="20"/>  
+
+                <label for="subjectt">Proje Detayı(Zorunlu)</label>
+                <textarea type="text" name="subjectt" size="20" rows="7" required></textarea>
+
+                <button class="standartButton1" type="submit">Send</button>
             </form> 
         </div>
     </div>
