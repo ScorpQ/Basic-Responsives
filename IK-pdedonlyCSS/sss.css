@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+}
+body{
+    width: 80%;
+    max-width: 1400px;
+    margin: auto;
+    background-color: #121212 !important;
+}
+:root {
+    --white1: #FFF;
+    --grey1: #525252;
+    --grey2: #201E1E;
+    --grey3: #BCBBBB;
+    --grey4: #CFCFCF;
+    --grey5: #636363;
+    --green1: #316C40;
+    --black1: #161616;
+}
+
+/* GENERAL CSS */
+a{
+    color: var(--white1) !important;
+    text-decoration: none !important;
+}
+
+a:visited{
+    color: var(--white1);
+}
+/* **********  */
+
+
+/* HEADER CSS */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}   
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+header nav a{
+    color: var(--white1);
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+}
+header a:after{
+    content:'';
+    display: block;
+    width: 0%;  
+    height: 1px;
+    background-color: var(--white1);
+    transition: width 0.3s ease;
+}       /* 4 bilzik 1 set */
+header a:hover:after{
+    width: 100%;
+}
+header .hamburger{
+    display: none;
+    width: 3.5rem;
+    height: 2rem;
+}
+header .hamburger div{
+    height: 0.4rem;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: var(--grey1);
+    transition: all 0.3s ease;
+    transform-origin: left center;
+    border-radius: 5rem;
+}
+/*  **********  */
+
+/* HEADER MEDIA Q. */
+@media only screen and (max-width: 900px){
+    nav{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-around !important;
+        align-items: center;
+        padding-bottom: 5rem;
+        position: fixed;
+        inset: 0 0 0 0;
+        background-color: rgb(30, 30, 28);
+        transform: translateX(100%);
+        transition: transform 0.5s ease;
+        z-index: 100;
+    }
+    nav a{
+        font-size: 2rem !important;
+    }
+    
+    .hamburger{
+        display: block !important;
+        z-index:1000;
+    }
+
+        header[data-visible="true"] nav{
+            transform: translateX(0%);
+            overflow: hidden;
+                background-color: rgb(30, 30, 28);
+        }
+        header[data-visible="true"] .hamburger{
+            position: fixed;
+            left: 83%;
+        }
+        header[data-visible="true"] .hamburger .bar1{
+            transform: rotate(38deg);
+            width: 95% !important;
+        }   
+        header[data-visible="true"]  .hamburger .bar2{
+            width: 0%;
+        }
+        header[data-visible="true"]  .hamburger .bar3{
+            transform: rotate(-38deg);
+            width: 95% !important;
+        } 
+    }
+/*  **********  */
+
+
+
+/* HEAD CSS */
+.head{
+    padding: 3rem;
+    height: 80%;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.54);
+    background: linear-gradient(180deg, rgba(48, 126, 67, 0.05) 0%, rgba(42, 92, 54, 0.50) 68.75%);
+    margin: 0.5rem 3%;
+}
+.head h2{
+    color: var(--white1);
+    font-size: 50px;
+    letter-spacing: 7.8px;
+}
+.head p{
+    color: var(--white1);
+    font-size: 20px;
+    letter-spacing: 2.88px;
+}
+@media only screen and (max-width: 500px) {
+    .head{
+        padding: 1rem;
+    }
+    .head h2{
+        color: var(--white1);
+        font-size: 30px !important;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+    .head p{
+        color: var(--white1);
+        font-size: 18px;
+        letter-spacing: 2.88px;
+        text-align: center;
+    }
+}
+/* ******* */
+
+
+/* SSS CSS */
+
+    .sss-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sss-body li{
+        list-style: none;
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    .sss-body li label{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        color: gold;
+    }
+    .sss-body li label span{
+        transform: rotate(90deg);
+        font-size: 22px;
+        color: #333;
+    }
+    .sss-body label + input[type='radio']{
+        display: none;
+    }
+    .sss-body .content{
+        padding: 0 10px;
+        line-height: 26px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    .sss-body label + input[type='radio']:checked + .content{
+        max-height: 400px;
+    }
+
+/* ******* */
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* footer css */
+ .footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5rem;
+    color: #FFF;
+  }
+  .footer h4 {
+    color: #FFF;
+    font-size: 25px;
+    line-height: 4rem;
+  }
+  .footer ul {
+    list-style-type: none;
+    line-height: 2.2rem;
+    font-size: 18px;
+    padding-left: 0;
+    width: max-content;
+  }
+  .footer ul li:hover {
+    font-size: 19px;
+  }
+  .footer .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    width: min-content;
+  }
+  .footer-icons img {
+    width: 50px;
+  }
+  .footer-icons a {
+    background-color: #316C40;
+    margin: 0.3rem;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  .footer-icons a:hover {
+    border-radius: 40%;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .footer {
+      flex-direction: column !important;
+      row-gap: 2rem !important;
+    }
+    .footer h4 {
+      font-size: 25px !important;
+    }
+    .hamburger div {
+      height: 0.25rem !important;
+      width: 90% !important;
+    }
+    header[data-visible="true"]  .hamburger .bar2{
+      width: 0% !important;
+  }
+  .footer ul {
+    font-size: 15px !important;
+  }
+}
