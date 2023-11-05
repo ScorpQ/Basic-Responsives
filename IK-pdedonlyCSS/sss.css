@@ -171,44 +171,59 @@ header .hamburger div{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 80%;
+        margin: 2rem auto -3rem auto;
     }
     .sss-body li{
         list-style: none;
         width: 100%;
-        margin-bottom: 10px;
-        background-color: #fff;
-        padding: 10px;
-        border-radius: 4px;
+        margin-bottom: 20px;
+        border: 2px solid #636363;
+        border-radius: 10px; 
     }
     .sss-body li label{
-        padding: 10px;
+        padding: 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-size: 18px;
+        font-size: 25px;
         font-weight: 500;
         cursor: pointer;
-        color: gold;
+        color: var(--white1);
+        background: linear-gradient(180deg, rgba(48, 126, 67, 0.05) 0%, rgba(42, 92, 54, 0.50) 68.75%);
     }
     .sss-body li label span{
         transform: rotate(90deg);
         font-size: 22px;
-        color: #333;
+        color: var(--white1);
     }
     .sss-body label + input[type='radio']{
         display: none;
     }
     .sss-body .content{
-        padding: 0 10px;
-        line-height: 26px;
+        line-height: 30px;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.5s;
+        background-color: #121212;
+        color: var(--white1);
+        font-size: 20px;
+        padding: 0 20px;
     }
     .sss-body label + input[type='radio']:checked + .content{
         max-height: 400px;
+        padding: 25px 20px;
     }
-
+    @media only screen and (max-width: 500px) {
+        .sss-body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 94%;
+            margin: 2rem auto -3rem auto; 
+        }
+    }
 /* ******* */
 
 
