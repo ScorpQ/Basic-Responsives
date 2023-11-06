@@ -141,6 +141,7 @@ header .hamburger div{
     letter-spacing: 3.6px;
     padding: 4rem 0;
     color: var(--white1);
+    font-family: 'Metal Mania', sans-serif;
 }
 .banner-container .banner-container-left{
     padding: 0 3rem;
@@ -148,7 +149,7 @@ header .hamburger div{
 }
 .banner-container .banner-container-left img{
     width: 100%;
-    min-width: 226px;
+    min-width: 116px;
 }
 /*Link style inside the banner*/
 .standartButton1{
@@ -174,7 +175,13 @@ header .hamburger div{
       padding-top: 1rem;
     }
     .banner-container{
-        flex-direction: column;
+      flex-direction: column;
+    }
+    .banner-container .banner-container-left{
+      width: 70%;
+    }
+    .banner-container p{
+      font-size: 25px !important;
     }
 }
 /* ************ */
