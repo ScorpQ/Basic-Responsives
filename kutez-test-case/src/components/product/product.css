@@ -1,0 +1,36 @@
+.product {
+  background-color: white;
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+}
+
+.product:hover {
+  background-color: rgb(239, 239, 239);
+  cursor: pointer;
+}
+
+.product-head {
+  overflow: hidden;
+}
+
+.product-head img {
+  border-radius: 8%;
+  margin-bottom: 8px;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.product-head:hover img {
+  transform: scale(1.1);
+}
+
+.product-body {
+  padding-left: 5px;
+}
+
+.product-body .title {
+  line-height: 30px;
+}

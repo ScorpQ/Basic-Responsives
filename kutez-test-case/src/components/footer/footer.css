@@ -1,0 +1,22 @@
+.Footer {
+  margin: 4rem 0 4rem 0;
+}
+
+.Footer .footer-head {
+  font-family: 'ZHU';
+  font-size: 26px;
+  font-weight: 100;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 4.5rem;
+}
+
+.Footer .footer-body {
+  font-family: 'Montserrat';
+  font-size: 23px;
+  font-weight: 300;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 2.3rem;
+}

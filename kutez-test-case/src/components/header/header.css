@@ -1,0 +1,28 @@
+/* HEADER CSS */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  width: 85%;
+  margin: 0 auto;
+}
+header button {
+  background-color: transparent;
+  border: none;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+}
+header div a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+header div a:visited {
+  color: black;
+}
+/*  **********  */
